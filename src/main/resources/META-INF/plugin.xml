@@ -1,0 +1,17 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>io.github.tgeng.latexsymbol.LatexSymbol</id>
+    <name>Latex Symbol</name>
+    <vendor email="aipser.3d@gmail.com" url="https://github.com/tgeng//">Tianyu Geng</vendor>
+
+    <description><![CDATA[
+        Plugin that provides live templates for common LaTeX symbols as unicode. Open "Settings -> Editor -> Live
+        Templates -> Latex" to see available symbols.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplates file="/templates.xml"/>
+        <liveTemplateContext implementation="io.github.tgeng.latexsymbol.LatexSymbolContext"/>
+    </extensions>
+</idea-plugin>
