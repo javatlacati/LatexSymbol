@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "io.github.tgeng.latexsymbol"
-version = "0.1"
+version = "0.2"
 
 repositories {
     mavenCentral()
@@ -14,9 +14,7 @@ repositories {
 // Configure Gradle IntelliJ Plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
 intellij {
     version.set("2021.3")
-    type.set("IC") // Target IDE Platform
-
-    plugins.set(listOf(/* Plugin Dependencies */))
+    updateSinceUntilBuild.set(false)
 }
 
 tasks {
